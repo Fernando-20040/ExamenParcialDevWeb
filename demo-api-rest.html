@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo API</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body class="container py-5">
+
+  <h1>Consumo de API</h1>
+  <button id="btn-api" class="btn btn-primary">Obtener Mensaje</button>
+  <div id="resultado" class="mt-3"></div>
+
+  <script src="js/jquery.min.js"></script>
+  <script>
+    $("#btn-api").click(function(){
+      $.ajax({
+        url: "https://s1uplfovq4.execute-api.us-east-1.amazonaws.com/default/exampleLinks",
+        method: "GET",
+        success: function(data){
+          $("#resultado").html(`
+            <div class="alert alert-info">
+              ${data.mensaje}
+            </div>
+          `);
+        },
+        error: function(xhr, status, error){
+          console.error("Error AJAX:", status, error);
+          $("#resultado").html(`<div class="alert alert-danger">Error al obtener datos</div>`);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
