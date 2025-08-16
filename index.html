@@ -7,6 +7,49 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<header class="bg-primary text-white text-center p-3">
+  <h1>Mi Perfil</h1>
+  <h2>Aprendiz en Desarrollo Web</h2>
+  <h3>Información Personal</h3>
+</header>
+
+<main class="container my-4">
+  <div class="row">
+    <div class="col-md-4 text-center">
+      <img src="assets/profile.jpg" alt="Foto de perfil" class="img-fluid rounded-circle" width="200">
+      <p>Soy un estudiante apasionado por el desarrollo web.</p>
+      <a href="https://github.com/Fernando-20040" target="_blank">Mi GitHub</a> |
+      <a href="https://www.facebook.com/Fernakun" target="_blank">Mi Facebook</a>
+    </div>
+    <div class="col-md-8">
+      <h3>Habilidades</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <h3>Proyectos</h3>
+      <ol>
+        <li>Sitio personal</li>
+        <li>Mini Red Social "NexusSempai"</li>
+      </ol>
+
+      <h3>Información Académica</h3>
+      <table class="table table-striped">
+        <tr><th>Año</th><th>Institución</th><th>Título</th></tr>
+        <tr><td>2022</td><td>Universidad Mariano Galvez de Guatemala</td><td>Ingeniería Web</td></tr>
+      </table>
+
+      <h3>Contáctame</h3>
+      <form id="contact-form">
+        <input type="text" class="form-control my-2" placeholder="Nombre" id="nombre">
+        <input type="email" class="form-control my-2" placeholder="Correo" id="correo">
+        <textarea class="form-control my-2" placeholder="Mensaje" id="mensaje"></textarea>
+        <input type="submit" value="Enviar" class="btn btn-primary">
+      </form>
+    </div>
+  </div>
+</main>
 
   <script src="js/jquery.min.js"></script>
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
