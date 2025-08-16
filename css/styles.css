@@ -1,0 +1,41 @@
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+/* Grid para main */
+main .row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+ul li, ol li {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+table {
+  border: 1px solid #ccc;
+}
+
+a:hover {
+  color: red;
+}
+
+input:focus {
+  border: 2px solid blue;
+}
+
+h1::after {
+  content: " 🌟";
+  color: gold;
+}
+
+img {
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
