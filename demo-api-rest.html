@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Demo API</title>
+  <title>Demo API con CORS Proxy</title>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body class="container py-5">
@@ -15,14 +15,15 @@
   <script>
     $("#btn-api").click(function(){
       $.ajax({
-        url: "https://s1uplfovq4.execute-api.us-east-1.amazonaws.com/default/exampleLinks",
+        url: "https://cors-proxy4.p.rapidapi.com/?url=" + encodeURIComponent("https://s1uplfovq4.execute-api.us-east-1.amazonaws.com/default/example"),
         method: "GET",
+        headers: {
+          "x-rapidapi-host": "cors-proxy4.p.rapidapi.com",
+          "x-rapidapi-key": "a393644aefmsha7998b059dd7c54p1d5644jsnf26ce041cccb"
+        },
         success: function(data){
-          $("#resultado").html(`
-            <div class="alert alert-info">
-              ${data.mensaje}
-            </div>
-          `);
+          if (typeof data === "string") data = JSON.parse(data);
+          $("#resultado").html(`<div class="alert alert-info">${data.mensaje}</div>`);
         },
         error: function(xhr, status, error){
           console.error("Error AJAX:", status, error);
@@ -31,5 +32,6 @@
       });
     });
   </script>
+
 </body>
 </html>
