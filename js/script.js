@@ -57,7 +57,7 @@ $(document).ready(function(){
     if(nuevoItem){
       $("#lista-dinamica").append("<li>"+nuevoItem+"</li>");
     } else {
-      alert("Escribe algo en el campo 'Nombre' para agregarlo a la lista");
+      alert("Esperemos sacar 15 en el examen");
     }
   });
 

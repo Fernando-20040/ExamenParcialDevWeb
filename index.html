@@ -8,62 +8,81 @@
 </head>
 <body>
 
-    
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Perfil</a>
-    <button class="btn btn-outline-info" id="btn-bienvenida">Bienvenida</button>
-  </div>
-</nav>
-
-
-<header class="bg-primary text-white text-center p-3">
-  <h1>Mi Perfil</h1>
-  <h2>Aprendiz en Desarrollo Web</h2>
-  <h3>Información Personal</h3>
-</header>
-
-<main class="container my-4">
-  <div class="row">
-    <div class="col-md-4 text-center">
-      <img src="https://scontent.fgua3-3.fna.fbcdn.net/v/t39.30808-6/457409178_825182119765479_6720832083273957987_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=A68EOXbuw7sQ7kNvwFoXUCG&_nc_oc=AdkrGxVloeZpjW-PDPGGiq98oSIMpMy41pmcqkXQhAHS-EdSfGFkkt6166iJjh57mDFD_JYTtq-iu6bao5m6Vyle&_nc_zt=23&_nc_ht=scontent.fgua3-3.fna&_nc_gid=AP4Oww2ksF3HiZ2mwOLBJg&oh=00_AfU6-SqyGVelC6CuC3v9iA954dvHV5kMDUPP6YK6ybv5mw&oe=68A68FBA" alt="Foto de perfil" class="img-fluid rounded-circle" width="200">
-      <p>Soy un estudiante apasionado por el desarrollo web.</p>
-      <a href="https://github.com/Fernando-20040" target="_blank">Mi GitHub</a> |
-      <a href="https://www.facebook.com/Fernakun" target="_blank">Mi Facebook</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Perfil</a>
+      <button class="btn btn-outline-info" id="btn-bienvenida">Bienvenida</button>
     </div>
-    <div class="col-md-8">
-      <h3>Habilidades</h3>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ul>
-      <h3>Proyectos</h3>
-      <ol>
-        <li>Sitio personal</li>
-        <li>Mini Red Social "NexusSempai"</li>
-      </ol>
+  </nav>
 
-      <h3>Información Académica</h3>
-      <table class="table table-striped">
-        <tr><th>Año</th><th>Institución</th><th>Título</th></tr>
-        <tr><td>2021</td><td>Centro Educativo Integral Cristiano CEIC</td><td>Perito Contador</td></tr>
-        <tr><td>2022</td><td>Universidad Mariano Galvez de Guatemala</td><td>Ingeniería en Sistemas de Informacion (estudiante)</td></tr>
-  
+  <header class="bg-primary text-white text-center p-3">
+    <h1>Mi Perfil</h1>
+    <h2>Aprendiz en Desarrollo Web</h2>
+    <h3>Información Personal</h3>
+  </header>
+
+  <main class="container my-4">
+    <div class="row">
+      
+      <div class="col-md-4 text-center">
+        <img src="https://scontent.fgua3-3.fna.fbcdn.net/v/t39.30808-6/457409178_825182119765479_6720832083273957987_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=A68EOXbuw7sQ7kNvwFoXUCG&_nc_oc=AdkrGxVloeZpjW-PDPGGiq98oSIMpMy41pmcqkXQhAHS-EdSfGFkkt6166iJjh57mDFD_JYTtq-iu6bao5m6Vyle&_nc_zt=23&_nc_ht=scontent.fgua3-3.fna&_nc_gid=AP4Oww2ksF3HiZ2mwOLBJg&oh=00_AfU6-SqyGVelC6CuC3v9iA954dvHV5kMDUPP6YK6ybv5mw&oe=68A68FBA" 
+             alt="Foto de perfil" 
+             class="img-fluid rounded-circle" 
+             width="200">
+        <p>Soy un estudiante apasionado por el desarrollo web.</p>
+        <a href="https://github.com/Fernando-20040" target="_blank">Mi GitHub</a> |
+        <a href="https://www.facebook.com/Fernakun" target="_blank">Mi Facebook</a>
+      </div>
+      
+      <div class="col-md-8">
+        <h3>Habilidades</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+
+        <h3>Proyectos</h3>
+        <ol>
+          <li>Sitio personal</li>
+          <li>Mini Red Social "NexusSempai"</li>
+        </ol>
+
+        <h3>Información Académica</h3>
+        <table class="table table-striped">
+          <tr><th>Año</th><th>Institución</th><th>Título</th></tr>
+          <tr>
+            <td>2021</td>
+            <td>Centro Educativo Integral Cristiano CEIC</td>
+            <td>Perito Contador</td>
+          </tr>
+          <tr>
+            <td>2022</td>
+            <td>Universidad Mariano Galvez de Guatemala</td>
+            <td>Ingeniería en Sistemas de Informacion (estudiante)</td>
+          </tr>
+        </table>
+
         <button id="btn-cambiar-fondo" class="btn btn-success mt-3">Cambiar Fondo</button>
 
-    </table>
+        <h3>Contáctame</h3>
+        <form id="contact-form">
+          <input type="text" class="form-control my-2" placeholder="Nombre" id="nombre">
+          <input type="email" class="form-control my-2" placeholder="Correo" id="correo">
+          <textarea class="form-control my-2" placeholder="Mensaje" id="mensaje"></textarea>
+          <input type="submit" value="Enviar" class="btn btn-primary">
+        </form>
 
-      <h3>Contáctame</h3>
-      <form id="contact-form">
-        <input type="text" class="form-control my-2" placeholder="Nombre" id="nombre">
-        <input type="email" class="form-control my-2" placeholder="Correo" id="correo">
-        <textarea class="form-control my-2" placeholder="Mensaje" id="mensaje"></textarea>
-        <input type="submit" value="Enviar" class="btn btn-primary">
-      </form>
+        <h3>Extras</h3>
+        <p id="parrafo-cambiable">Este párrafo se puede cambiar con jQuery.</p>
+        <button id="btn-cambiar-texto" class="btn btn-warning my-2">Cambiar Texto</button>
+
+        <h4>Lista dinámica</h4>
+        <ul id="lista-dinamica" class="list-group mb-2"></ul>
+        <button id="btn-agregar-item" class="btn btn-info">Agregar a lista</button>
+      </div>
     </div>
-  </div>
-</main>
+  </main>
 
   <script src="js/jquery.min.js"></script>
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
